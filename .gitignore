@@ -1,0 +1,16 @@
+# Never commit data (privacy/size)
+data/raw/*
+data/processed/*
+
+# Results are re-generated
+results/*
+
+# Build artifacts
+*.html
+*.pdf
+
+# RStudio & OS clutter
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
