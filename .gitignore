@@ -8,6 +8,9 @@ results/*
 # Build artifacts
 *.html
 *.pdf
+*.csv
+*.xlsx
+*.rds
 
 # RStudio & OS clutter
 .Rhistory
