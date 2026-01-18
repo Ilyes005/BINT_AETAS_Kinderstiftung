@@ -48,6 +48,8 @@ included in this repository as `.rds` files and stored in
 
 The following processed datasets are provided: - `selected.data.rds` -
 `cleaned_data.rds` - `clean_data.rds` - `d.rds`
+**Important note on execution order:**  
+The dataset `cleaned_data.rds` must be created before `clean_data.rds` and `d.rds`.
 
 These files allow all analysis and plotting scripts to be executed
 **without access to the raw data**.
@@ -104,9 +106,11 @@ renv::restore()
 
 ## 6. Script Execution (Without Quarto)
 
-If the scripts are run individually (i.e., without rendering the Quarto
-file), they must be executed in the following order. Load "utils.R"
-script Load "prepare plot data.R" script Load "plot.R" script
+If the scripts are run individually (without rendering the Quarto file), the required execution order is:
+1. `utils.R`
+2. `prepare plot data.R`
+3. `plot.R`
+
 
 ------------------------------------------------------------------------
 
@@ -120,5 +124,4 @@ should be reproduced, run: "cleaned.data.R" script
 ## 8. Report Generation (Quarto)
 
 To generate the final presentation: Open presentation.qmd Render the
-file using Quarto (HTML output) The rendered HTML presentation is saved
-in the results/ directory.
+file using Quarto (HTML output)
