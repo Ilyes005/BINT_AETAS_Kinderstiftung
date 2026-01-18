@@ -2,17 +2,13 @@
 data/raw/*
 data/processed/*
 
-# Results are re-generated
-results/*
-
 # Build artifacts
-*.html
 *.pdf
 *.csv
 *.xlsx
 *.rds
 
-# RStudio & OS clutter
+# RStudio clutter
 .Rhistory
 .RData
 .Rproj.user/
