@@ -1,0 +1,54 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+
+.author {
+  text-align: right;
+}
+
+.reveal .footer {
+  font-size: 0.25em !important;
+  text-align: left !important;
+  display: block;
+  position: fixed;
+  left: 50px;
+  right: 90px;
+}
+
+.reveal .slides section .fragment.semi-fade-out {
+	opacity: 1;
+	visibility: inherit;
+
+	&.visible {
+		opacity: 0.25;
+		visibility: inherit;
+	}
+}
+
+.reveal .result {
+  max-height: 100%;
+}
+
+.reveal .slide-number {
+  right: 20px !important;
+  bottom: 15px !important;
+  left: auto !important;
+  top: auto !important;     
+  color: #333;
+}
+.reveal .slide-logo {
+  height: 100px !important;
+  width: 100px!important;
+  max-width: unset !important;
+  max-height: unset !important;
+  top: 14px !important;
+  right: 50px !important;
+}
+
+.custom-smaller {
+    font-size: 0.9em;
+}
+
+.custom-smaller2 {
+    font-size: 0.75em;
+}
