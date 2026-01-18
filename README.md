@@ -5,7 +5,7 @@ editor_options:
 ---
 
 
-## AETAS Kinderstiftung
+### AETAS Kinderstiftung
 
 ## Authors
 
