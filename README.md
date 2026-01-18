@@ -36,23 +36,21 @@ and follows principles of transparent and reproducible data analysis.
 
 **Confidential data – raw data not included**
 
-The raw survey data are **not publicly available** due to ethical and
-data protection restrictions.
+The raw survey data are **not publicly available** due to ethical and data protection restrictions.
 
-To reproduce the complete data cleaning pipeline, the raw data must be
-provided manually and placed in:
+To reproduce the complete data cleaning pipeline, the raw data must be provided manually and placed in `data/raw/`.
 
-For reproducibility and analysis purposes, **processed datasets** are
-included in this repository as `.rds` files and stored in
-`data/processed/`
+For reproducibility and analysis purposes, **processed datasets** are provided as `.rds` files and stored in `data/processed/`.  
+Due to data protection restrictions, these processed datasets are **not included in the GitHub repository** and are instead provided **only in the ZIP submission**.
 
-The following processed datasets are provided: - `selected.data.rds` -
-`cleaned_data.rds` - `clean_data.rds` - `d.rds`
-**Important note on execution order:**  
-The dataset `cleaned_data.rds` must be created before `clean_data.rds` and `d.rds`.
+The following processed datasets are provided:
+- `selected.data.rds`
+- `cleaned_data.rds`
+- `clean_data.rds`
+- `d.rds`
 
-These files allow all analysis and plotting scripts to be executed
-**without access to the raw data**.
+
+These files allow all analysis and plotting scripts to be executed **without access to the raw data**.
 
 ------------------------------------------------------------------------
 
@@ -118,6 +116,8 @@ If the scripts are run individually (without rendering the Quarto file), the req
 
 If the raw data are available and the full data preparation pipeline
 should be reproduced, run: "cleaned.data.R" script
+**Important note on execution order:**  
+The dataset `cleaned_data.rds` must be created before `clean_data.rds` and `d.rds`, as these datasets are derived from `cleaned_data.rds`.
 
 ------------------------------------------------------------------------
 
