@@ -4,9 +4,8 @@ editor_options:
     wrap: 72
 ---
 
-## BINT_AETAS_Kinderstiftung
 
-# AETAS Kinderstiftung
+## AETAS Kinderstiftung
 
 ## Authors
 
